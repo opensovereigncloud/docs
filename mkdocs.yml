@@ -1,42 +1,39 @@
 ---
-site_name: IronCore - cloud native Infrastructure as a Service 
-plugins:
-  - search
-  - multirepo:
-      repos:
-        - section: IronCore
-          import_url: 'https://github.com/ironcore-dev/ironcore?branch=main&edit_uri=/blob/main'
-        - section: IronCore Net
-          import_url: 'https://github.com/ironcore-dev/ironcore-net?branch=main&edit_uri=/blob/main'
-        - section: IronCore Metal Operator
-          import_url: 'https://github.com/ironcore-dev/metal-operator?branch=main&edit_uri=/blob/main'
+site_name: IronCore - Cloud Native IaaS
+repo_url: https://github.com/ironcore-dev/docs/
+edit_uri: edit/main/docs/
+
 theme:
   icon:
     repo: fontawesome/brands/github
   features:
-    - navigation.instant
-    - navigation.tracking
-    - navigation.expand
-    - navigation.indexes
-    - navigation.top
+  - navigation.instant
+  - navigation.tracking
+  - navigation.indexes
+  - navigation.top
   name: material
   logo: assets/logo.svg
-  favicon: assets/logo.png
+  favicon: assets/favicon/favicon.ico
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: white
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: white
+    toggle:
+      icon: material/weather-night
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: black
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to light mode
   font:
-    text: 'Work Sans'
+    text: "Work Sans"
+
+plugins:
+  - search
+  - multirepo:
+      cleanup: true
 
 markdown_extensions:
   - pymdownx.highlight
@@ -51,3 +48,35 @@ markdown_extensions:
   - abbr
   - toc:
       permalink: true
+
+nav:
+  - Home: index.md
+  - Fundamentals:
+      - Understand the Basics: fundamentals/understand-the-basics.md
+      - Core Concepts: fundamentals/core-concepts.md
+      - Getting Started: fundamentals/getting-started.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - Integration: architecture/integration.md
+      - Data Flow: architecture/dataflow.md
+  - Components: 
+      # Add component repo URLs here (Imported repos must have a mkdocs.yml file)
+      - Ironcore: "!import https://github.com/ironcore-dev/ironcore?branch=main"
+      - Ceph Provider: "!import https://github.com/ironcore-dev/ceph-provider?branch=main"
+      - Libvirt Provider: "!import https://github.com/ironcore-dev/libvirt-provider?branch=main"
+  - User Guide: user-guide/index.md
+  - Operator Guide: operator-guide/index.md
+  - Developer Guide: developer-guide/index.md
+  - Upgrade Guide: upgrade-guide/index.md
+  - Troubleshooting: troubleshooting/index.md
+  - Contribute:
+    - Style Guide: contribute/style-guide.md
+    - Contributing: contribute/contributing.md
+  - Support: support/index.md
+  - Roadmap: roadmap/index.md
+  - Releases: releases/index.md
+
+extra:
+  social:
+  - icon: fontawesome/brands/github
+    link: https://github.com/ironcore-dev/docs
