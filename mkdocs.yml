@@ -1,5 +1,5 @@
 ---
-site_name: IronCore - Cloud Native IaaS
+site_name: IronCore Project
 repo_url: https://github.com/ironcore-dev/docs/
 edit_uri: edit/main/docs/
 
@@ -51,30 +51,50 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Getting Started:
+    - Overview: getting-started/index.md
+    - IaaS: getting-started/iaas.md
+    - Bare Metal: getting-started/bare-metal.md
   - Fundamentals:
       - Understand the Basics: fundamentals/understand-the-basics.md
       - Core Concepts: fundamentals/core-concepts.md
-      - Getting Started: fundamentals/getting-started.md
+      - Operating System: fundamentals/operating-system.md
   - Architecture:
       - Overview: architecture/overview.md
-      - Integration: architecture/integration.md
-      - Data Flow: architecture/dataflow.md
+      - IaaS:
+        - Overview: architecture/overview.md
+        - Networking: architecture/networking.md
+        - Integration: architecture/integration.md
+        - Data Flow: architecture/dataflow.md
+      - Bare Metal:
+        - Overview: architecture/overview.md
+        - Networking: architecture/networking.md
+        - Integration: architecture/integration.md
+        - Data Flow: architecture/dataflow.md
   - Components: 
       # Add component repo URLs here (Imported repos must have a mkdocs.yml file)
       - Ironcore: "!import https://github.com/ironcore-dev/ironcore?branch=main"
       - Ceph Provider: "!import https://github.com/ironcore-dev/ceph-provider?branch=main"
       - Libvirt Provider: "!import https://github.com/ironcore-dev/libvirt-provider?branch=main"
-  - User Guide: user-guide/index.md
-  - Operator Guide: operator-guide/index.md
+  - User Guide:
+    - IaaS:
+      - Tutorials: user-guide/index.md
+    - Bare Metal:
+      - Tutorials: user-guide/index.md
+  - Operator Guide:
+    - IaaS:
+      - Landscape Setup: operator-guide/index.md
+    - Bare Metal:
+      - Landscape Setup: operator-guide/index.md
   - Developer Guide: developer-guide/index.md
-  - Upgrade Guide: upgrade-guide/index.md
-  - Troubleshooting: troubleshooting/index.md
+#  - Upgrade Guide: upgrade-guide/index.md
+#  - Troubleshooting: troubleshooting/index.md
   - Contribute:
     - Style Guide: contribute/style-guide.md
     - Contributing: contribute/contributing.md
-  - Support: support/index.md
-  - Roadmap: roadmap/index.md
-  - Releases: releases/index.md
+#  - Support: support/index.md
+#  - Roadmap: roadmap/index.md
+#  - Releases: releases/index.md
 
 extra:
   social:
