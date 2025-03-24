@@ -1,3 +1,6 @@
-# Welcome to the IronCore documentation
+# IronCore Project Central Documentation
 
-The GitHub organization for IronCore is https://github.com/ironcore-dev.
+Welcome to the central documentation for the IronCore project—a cloud native Infrastructure as a Service platform developed by [ironcore-dev](https://github.com/ironcore-dev). 
+
+Explore comprehensive guides, architecture insights, and component-specific documentation to help you get started and manage your deployment effectively.
+

@@ -1,15 +1,15 @@
-FROM python:3.11-alpine3.19
+FROM squidfunk/mkdocs-material:latest
 
-LABEL project=multi_repo_docs
+LABEL project=ironcore_project_multi_repo_docs
 
 WORKDIR /docs
 
 COPY docs/requirements.txt requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
-RUN apk add git bash
+RUN pip install --no-cache-dir -r requirements.txt \
+    && apk add --no-cache bash
 
-EXPOSE 8080
+EXPOSE 8000
 
 # Start development server by default
 ENTRYPOINT ["mkdocs"]
-CMD ["serve", "--dev-addr=0.0.0.0:8080"]
+CMD ["serve", "--dev-addr=0.0.0.0:8000"]

@@ -1,13 +1,26 @@
-# IronCore - cloud native Infrastructure as a Service
+# IronCore Project Central Documentation
 
-This repository contains the multi repository orchestration configuration for the overarching [IronCore-based](https://github.com/ironcore-dev) documentation.
+Welcome to the IronCore Project Documentation. This is the central source for all components of the IronCore project.
 
-## Run
+This repository holds the multi-repository configuration for the [IronCore-based](https://github.com/ironcore-dev) documentation.
 
-Start the container build & run with:
+Here you’ll find detailed guides, architecture overviews, usage instructions, and developer documentation.
+
+
+## Running the Documentation Locally
+
+To build and run the documentation container locally, run:
+
 
 ```
-make serve
+make start-docs
 ```
 
-The endpoint is then reachable in your local browser with port `:8080`.
+Then open your browser and navigate to http://localhost:8000 to view the documentation site.
+
+## Cleaning Up
+
+To remove unused Docker containers for this project, run:
+```
+make clean-docs
+```
