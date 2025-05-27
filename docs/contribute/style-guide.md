@@ -181,6 +181,23 @@ the same numbered list.
 1. third item
 ```
 
+### Bulleted lists
+
+Bulleted (or unordered lists) should use a `-` as the identifier for an item in
+a bulleted list. For example:
+
+```markdown
+DO NOT DO THIS
+
+* not a good item
+* this is also not a good item
+
+DO THIS
+
+- this is a good item
+- this is another good item
+```
+
 ### Indentation
 
 Use 4-space indentation for lists, this includes ordered and unordered lists as
