@@ -15,8 +15,8 @@ solutions, such as warning boxes.
 
 You can install `mkdocs` with the Material theme to your workstation using `pip`
 and render the page locally to see the result. Do not assume, that your document
-will look OK via `mkdocs`, based on its appearance in Github, Gitlab or in
-VSCode's preview!
+will look OK via `mkdocs`, based on its appearance in GitHub, Gitlab, or in VS
+Code's preview!
 
 ## Document layout
 
@@ -46,17 +46,18 @@ Content.
    topic. Imagine yourself as a complete newbie who landed on your “Extending
    Foo” doc and doesn’t know the most basic information you take for granted.
    “What is Foo? Why would I extend it?”
-1. `[TOC]`: if you use hosting that supports table of contents, such as Gitiles,
-   put `[TOC]` after the short introduction.
+1. `[TOC]`: if you use hosting that supports table of contents, such as GitHub
+   or Gitlab put `[TOC]` after the short introduction. If renderers support
+   creating automatic TOCs, do not place a `TOC` directive.
 1. `## Topic`: The rest of your headings should start from H2.
 1. `## See also`: Put miscellaneous links at the bottom for the user who wants
    to know more or didn’t find what they needed.
 
 ## Table of contents
 
-`mkdocs` generates a static TOC from the subpage based on the headers found in
-the page during generation. Do not include any sort of TOC to the user-facing
-documentation.
+`mkdocs` generates a static `TOC` from the sub-page based on the headers found
+in the page during generation. Do not include any sort of `TOC` to the
+user-facing documentation.
 
 ## Line length
 
@@ -64,10 +65,10 @@ Markdown can be considered source code, which is written, re-written, edited
 continuously, and compiled into its final HTML form.
 
 To simplify the editing and review process the line length should be kept short.
-Consider starting a sentence in a new line after a comma, after an "and", when
+Consider starting a sentence in a newline after a comma, after an "and", when
 the sentence naturally breaks.
 
-Try to write short sentences. Keep in mind a cca. 80, max. 120 character line
+Try to write short sentences. Keep in mind a ca. 80, max. 120 character line
 length limit. If the sentence is too long, apply the rules from above.
 
 ## Headers
@@ -96,7 +97,7 @@ Not:
 
 Header text has to be unique in the whole Markdown source document. It is
 important, because HTML IDs are created from the headers which are then used as
-links to the specific section in the document (such as the TOC). Duplicated
+links to the specific section in the document (such as the `TOC`). Duplicated
 headers will break this functionality, and a link to a specific section can be
 rendered as a link to another section with the same header text. This includes
 headers in different sub-sections.
@@ -189,8 +190,8 @@ a bulleted list. For example:
 ```markdown
 DO NOT DO THIS
 
-* not a good item
-* this is also not a good item
+- not a good item
+- this is also not a good item
 
 DO THIS
 
@@ -250,9 +251,9 @@ There are two possibilities:
 - One asterisk for _italics, or slanted text_: `*italics*`. This is usually
   recommended for emphasizing text.
 - Two asterisks for **bold text**: `**bold**`. This is more visible.
-- Do not use the backticked style for highlighting parts of the text.
+- Do not use the backtick style for highlighting parts of the text.
 
-To write monospaced texts:
+To write monospace texts:
 
 - Backticked (\`) `ConfigurationParameter`. Use only for words, phrases lifted
   from a source code or configuration file.
@@ -261,15 +262,18 @@ To write monospaced texts:
 
 !!! note
 
-```
-Each code block has to have its language specified. For plaintexts or stdouts, use text. For usage refer to official documentation.
-```
+    Each code block has to have its language specified. For plaintexts or stdouts,
+    use text. For usage refer to official documentation.
 
 To write a block quote, prepend the line with `>`:
 
 > This is a block quote. You can use it to highlight a paragraph.
 
-`mkdocs` with the Material theme supports [admonitions] for structuring pages.
+`mkdocs` with the Material theme supports [admonitions][admonitions] for
+structuring pages.
+
+[admonitions]:
+    https://squidfunk.github.io/mkdocs-material/reference/admonitions/#usage
 
 ## Links
 
@@ -301,7 +305,7 @@ Relative paths are safe to use in the same directory. For example:
 [my other link](/path/to/another/dir/other-page.md)
 ```
 
-Avoid relative links if you need to specify other directories with ../:
+Avoid relative links if you need to specify other directories with `../`:
 
 ```markdown
 [my bad relative link](../bad/path/to/another/dir/other-page.md)
@@ -348,7 +352,7 @@ See more in the [documentation][doku].
 Use reference links more often in tables. It is particularly important to keep
 table content short, since Markdown does not provide a facility to break text in
 cell tables across multiple lines, and smaller tables are more readable.
-multiple lines, and smaller tables are more readable.
+Multiple lines, and smaller tables are more readable.
 
 For example, this table’s readability is worsened by inline links:
 
@@ -361,7 +365,7 @@ DO NOT DO THIS.
 | [site 2](http://github.com/excessively/long/path/example_site_2) | This is example site 2. |
 ```
 
-Instead, use reference-style links to shorthen the content of the table cells:
+Instead, use reference-style links to shorten the content of the table cells:
 
 ```markdown
 | Site     | Description             |
@@ -416,8 +420,8 @@ them out if there's no possibility to leave them out.
 Try to use light mode when creating screenshots, they look better on the white
 pages of the documentation.
 
-Try to shrink the window as much as possible, no point of screenshotting empty
-parts of web interfaces.
+Try to shrink the window as much as possible, no point of including empty parts
+of web interfaces.
 
 ## Folder and File naming convention
 
@@ -442,10 +446,8 @@ brokering-and-poollet-behavior.md
 - Use a Markdown linter plugin for your editor.
 
 This style guide was inspired by experience and
-[the official google documentation styleguide](https://google.github.io/styleguide/docguide/style.html).
+[the official google documentation style guide](https://google.github.io/styleguide/docguide/style.html).
 
-[admonitions]:
-    https://squidfunk.github.io/mkdocs-material/reference/admonitions/#usage
 [codespell]:
     https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 [utfsymbols]: https://www.w3schools.com/charsets/ref_utf_symbols.asp
