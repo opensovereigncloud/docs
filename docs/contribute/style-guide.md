@@ -190,8 +190,8 @@ a bulleted list. For example:
 ```markdown
 DO NOT DO THIS
 
-- not a good item
-- this is also not a good item
+* not a good item
+* this is also not a good item
 
 DO THIS
 
