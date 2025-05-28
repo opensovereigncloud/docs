@@ -472,5 +472,5 @@ This style guide was inspired by experience and
 
 [codespell]:
     https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
-[utfsymbols]: https://www.w3schools.com/charsets/ref_utf_symbols.asp
 [vimspell]: https://www.linux.com/training-tutorials/using-spell-checking-vim/
+[utfsymbols]: https://www.w3schools.com/charsets/ref_utf_symbols.asp
