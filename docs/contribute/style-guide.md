@@ -403,6 +403,28 @@ Some more text using a [different_link][different_link_def].
 [different_link_def]: http://differentreallyreallylonglink.com
 ```
 
+## Diagrams
+
+Diagrams are a well-suited tool to transport complex behavior or relationships
+in a digestible manner. To work with diagrams in an effective way the
+style-guide defines some guidelines for diagrams.
+
+There are different tools which implement diagram drawing, the most popular ones
+are:
+
+- [draw.io](https://draw.io)
+- [excalidraw](https://excalidraw.com)
+- [mermaid.js](https://mermaid.js.org)
+
+In general, the chosen tool is not as important. The source diagram should be
+stored in the same repository. When the chosen tool supports tabs, such usage
+should be limited to 1 tab per file. This is to make sure there are no hidden
+diagrams that renderers cannot properly visualize.
+
+Most tools support storing a diagram in some image format. The diagram should be
+stored in PNG format to support layers and transparency. The diagram image
+requires the filename suffix `.diagram.png`.
+
 ## Emoji
 
 How Emoji is displayed depends on the specific Markdown renderer software so to
