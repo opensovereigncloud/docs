@@ -16,7 +16,7 @@ To build and run the documentation container locally, run:
 make start-docs
 ```
 
-Then open your browser and navigate to http://localhost:5173/docs/ to view the documentation site.
+Then open your browser and navigate to http://localhost:5173/ to view the documentation site.
 
 ## Cleaning Up
 
