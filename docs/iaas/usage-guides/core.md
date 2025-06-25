@@ -38,7 +38,7 @@ By using `scopeSelectors`, only certain resources like CPU and memory may be tra
 
 ### Reconciliation Process:
 
-- **Gathering matching evaluators**: The `ResourcequotaController` retrieves all the matching evaluators from the registry for the specified resources in hard spec. Each resource evaluator implements set of Evaluator interface methods which helps in retrieving the current usage of that particular resource type.
+- **Gathering matching evaluators**: The `ResourceQuotaController` retrieves all the matching evaluators from the registry for the specified resources in hard spec. Each resource evaluator implements set of Evaluator interface methods which helps in retrieving the current usage of that particular resource type.
 - **Calculating resource usage**: Resource usage is calculated by iterating over each evaluator and listing the namespace resource of that particular type. Listed resources are then filtered out by matching specified scope selector and accumulated usage is calculated.
 - **Status update**: Once usage data is available, the `ResourceQuota` status is updated with the enforced hard resource limits and currently used resources.
 - **Resource quota handling**: On request of create/update resources whether to allow creating/update based on `ResourceQuota` usage is handled via admission controller. Resources that would exceed the quota will fail with HTTP status code 403 Forbidden.

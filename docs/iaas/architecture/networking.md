@@ -11,7 +11,7 @@ The main elements involved in IronCore's networking are:
 - [**ironcore-net**](https://github.com/ironcore-dev/ironcore-net): Global coordination service that manages network resource in an IronCore instance.
 - [**metalnet**](https://github.com/ironcore-dev/metalnet): A service that provides cluster-level networking capabilities for `Machines`.
 - [**dpservice**](https://github.com/ironcore-dev/dpservice): A service that manages data plane operations, including network traffic routing and policies.
-- [**metalbond**](https://github.com/ironcore-dev/metalbond): A component that handles route annoucements in an IronCore instance, ensuring that networking routes are
+- [**metalbond**](https://github.com/ironcore-dev/metalbond): A component that handles route announcements in an IronCore instance, ensuring that networking routes are
     correctly propagated across the IronCore installation.
 
 ## `ironcore` and `ironcore-net`
