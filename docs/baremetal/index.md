@@ -13,7 +13,7 @@ in a Kubernetes-native way. It leverages the power of Kubernetes Custom Resource
 
 The core components of the baremetal automation in IronCore include:
 - [**Metal Operator**](https://github.com/ironcore-dev/metal-operator): The central component that manages the lifecycle of bare metal servers.
-- [**Boot Operator**](https://github.com/ironcore-dev/boot-operator): iPXE and HTTP boot server that providers boot images and Ignition configurations.
+- [**Boot Operator**](https://github.com/ironcore-dev/boot-operator): iPXE and HTTP boot server that provides boot images and Ignition configurations.
 - [**FeDHCP**](https://github.com/ironcore-dev/fedhcp): A DHCP server that provides inband and out of band network configuration to bare metal servers.
 
 ## Prerequisites

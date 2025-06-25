@@ -65,7 +65,7 @@ process. We use [the standard DCO text of the Linux Foundation](https://develope
 
 ## Pull Request Checklist
 
-* Fork and clone the repository to you local machine.
+* Fork and clone the repository to your local machine.
 
 ```shell
 git clone git@github.com:ironcore-dev/docs.git
