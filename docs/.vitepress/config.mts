@@ -31,8 +31,9 @@ export default withMermaid({
             policies including privacy policy, terms of use and trademark usage guidelines, please see https://linuxfoundation.eu.
             Linux is a registered trademark of Linus Torvalds.
           </span>
-          <img src="/bmwe.png" style="max-width: 340px; margin-left: 16px;">
-        </div>`
+          <img src="https://raw.githubusercontent.com/ironcore-dev/ironcore-dev.github.io/refs/heads/main/docs/public/bmwe.png" style="max-width: 340px; margin-left: 16px;">
+        </div>
+        `
     },
 
     logo: {
