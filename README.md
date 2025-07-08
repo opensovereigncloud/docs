@@ -13,7 +13,7 @@ Here you’ll find detailed guides, architecture overviews, usage instructions, 
 To build and run the documentation container locally, run:
 
 ```
-make start-docs
+make startdocs
 ```
 
 Then open your browser and navigate to http://localhost:5173/ to view the documentation site.
@@ -22,7 +22,7 @@ Then open your browser and navigate to http://localhost:5173/ to view the docume
 
 To remove unused Docker containers for this project, run:
 ```
-make clean-docs
+make cleandocs
 ```
 
 ## Licensing
