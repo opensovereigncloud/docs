@@ -7,14 +7,14 @@ in a Kubernetes-native way. It leverages the power of Kubernetes Custom Resource
 - **Provisioning**: Deploy and configure servers using Ignition.
 - **Day-2 Operations**: Manage BIOS, firmware, and hardware inventory declaratively.
 - **3rd Party Integrations**: Seamlessly integrate with existing tools like vendor-specific management tools.
-- **Kubernetes Support**: Run Kubernetes on bare metal servers with support for Cluster API and Gardener.
+- **Kubernetes Support**: Run Kubernetes on bare metal servers with support of Cluster API and Gardener.
 
 ## Core Components
 
 The core components of the baremetal automation in IronCore include:
 - [**Metal Operator**](https://github.com/ironcore-dev/metal-operator): The central component that manages the lifecycle of bare metal servers.
 - [**Boot Operator**](https://github.com/ironcore-dev/boot-operator): iPXE and HTTP boot server that provides boot images and Ignition configurations.
-- [**FeDHCP**](https://github.com/ironcore-dev/fedhcp): A DHCP server that provides inband and out of band network configuration to bare metal servers.
+- [**FeDHCP**](https://github.com/ironcore-dev/fedhcp): A DHCP server that provides in-band and out-of-band network configuration to bare metal servers.
 
 ## Concepts and Usage Guides
 
