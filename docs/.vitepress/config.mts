@@ -24,16 +24,11 @@ export default withMermaid({
     },
 
     footer: {
-      copyright: `
-        <div style="display: flex; align-items: center; justify-content: space-between;">
-          <span>
-            Copyright © Linux Foundation Europe. IronCore is a project of NeoNephos Foundation. For applicable
-            policies including privacy policy, terms of use and trademark usage guidelines, please see https://linuxfoundation.eu.
-            Linux is a registered trademark of Linus Torvalds.
-          </span>
-          <img src="https://raw.githubusercontent.com/ironcore-dev/ironcore-dev.github.io/refs/heads/main/docs/public/bmwe.png" style="max-width: 340px; margin-left: 16px;">
-        </div>
-        `
+      copyright: 'Copyright © Linux Foundation Europe. IronCore is a project of NeoNephos Foundation. For applicable ' +
+          'policies including privacy policy, terms of use and trademark usage guidelines, please see ' +
+          'https://linuxfoundation.eu. Linux is a registered trademark of Linus Torvalds.' +
+          '<br><br>' +
+          '<img src="https://raw.githubusercontent.com/ironcore-dev/ironcore-dev.github.io/refs/heads/main/docs/public/bmwe.png" style="max-width: 340px; display: block; margin-right: auto; margin-left: auto;">'
     },
 
     logo: {
