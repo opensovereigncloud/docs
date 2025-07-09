@@ -2,7 +2,7 @@
 
 ## Overview
 
-IronCore's virtual networking architecture provides an end-to-end virtual networking solution for provisioned `Machine`s running in data centers, regardless they are baremetal machines or virtual machines. It is designed to enable robust, flexible and performing networking control plane and data plane.
+IronCore's virtual networking architecture provides an end-to-end virtual networking solution for provisioned `Machine`s running in data centers, regardless they are bare metal machines or virtual machines. It is designed to enable robust, flexible and performing networking control plane and data plane.
 
 - **Robust**: IronCore's virtual networking control plane is mainly implemented using Kubernetes controller model. Thus, it is able to survive component's failure and recover the running states by retrieving the desired networking configuration.
 - **Flexible**: Thanks to the modular and layered architecture design, IronCore's virtual networking solution allows developers to implement and interchange components from the most top-level data center management system built upon defined IronCore APIs, to lowest-level packet processing engines depending on the used hardware.
