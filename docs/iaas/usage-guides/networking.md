@@ -1,6 +1,6 @@
 # Networking Resources
 
-This guide describes the core networking resources in IronCore, such as `Networks`, `NetworkInterfaces`, `VirtualIPs`, `NAT gateways`, `LoadBalancers`, and `NetworkPolicies`. It explains how to define, configure, and manage these resources for the infrastructure.
+This guide describes the core networking resources in IronCore, such as `Networks`, `NetworkInterfaces`, `VirtualIPs`, `NAT gateways`, `LoadBalancers`, and `NetworkPolicies`.
 
 ## Network
 
@@ -26,11 +26,9 @@ spec:
 ### Key Fields:
 
 - `peerings` (`list`): Are the list of network peerings with this `Network` (optional).
-
-
 ### More about IronCore Network:
 
-- **Network creation**: [ironcore-net](https://github.com/ironcore-dev/ironcore-net) is the network plugin for IronCore that realizes the `Network` resource, When an IronCore `Network` is created, a corresponding `core.apinet.ironcore.dev/Network` is created in the ironcore-net(apinet) cluster.
+- **Network creation**: [ironcore-net](https://github.com/ironcore-dev/ironcore-net) is the network plugin for IronCore that realizes the `Network` resource. When an IronCore `Network` is created, a corresponding `core.apinet.ironcore.dev/Network` is created in the ironcore-net(apinet) cluster.
 Once created and with an allocated ID, the IronCore `Network` will be patched with the corresponding providerID of the apinet Network and set to state: `Available`. 
 The format of a network providerID is as follows:
 `ironcore-net://<namespace>/<name>/<id>/<uid>`
@@ -61,7 +59,6 @@ status:
   - name: peering1
     state: Ready
   state: Available
-
 ```
 
 For detailed e2e example on network peering
@@ -72,7 +69,6 @@ For detailed e2e example on network peering
 A `NetworkInterface` resource in IronCore represents a connection point between a `Machine` and a virtual 
 network. It encapsulates the configuration and life cycle management of the virtual network interface, ensuring 
 seamless connectivity for `Machines`.
-
 
 ### Example NetworkInterface Resource
 
@@ -178,7 +174,6 @@ spec:
 - `ipFamily` (`string`): `IPFamily` is the IP family of the `NATGateway`. Supported values for IPFamily are `IPv4` and `IPv6`.
 - `portsPerNetworkInterface` (`int32`): This Specifies the number of ports allocated per network interface and controls how many simultaneous connections can be handled per interface. If empty, 2048 (DefaultPortsPerNetworkInterface) is the default.
 - `networkRef` (`string`): It represents which network this `NATGateway` serves.
-
 
 After reconciling all `NATGateways`, the status gets updated with the corresponding values for `ips` as shown below.
 

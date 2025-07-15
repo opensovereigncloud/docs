@@ -1,4 +1,5 @@
 # IPAM Resources
+
 This guide explains how to use IronCore's integrated IP address management (IPAM) resources to define and manage IP prefixes and allocations.
 
 ## Prefix

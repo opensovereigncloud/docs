@@ -64,32 +64,32 @@ process. We use [the standard DCO text of the Linux Foundation](https://develope
 
 * Fork and clone the repository to your local machine.
 
-    ```shell
-    git clone git@github.com:ironcore-dev/ironcore-dev.github.io.git
-    cd docs
-    ```
+```shell
+git clone git@github.com:ironcore-dev/ironcore-dev.github.io.git
+cd docs
+```
 
 * Create a branch from the `main` using 'git checkout' command. 
 !!! note 
     If needed, rebase to the current `main` branch before submitting your pull request. If it doesn't merge properly
     with `main` you may be asked to rebase your changes.
 
-    ```shell
-    git checkout -b my_feature
-    # rebase if necessary
-    git fetch upstream main
-    git rebase upstream/main
-    ```
+```shell
+git checkout -b my_feature
+# rebase if necessary
+git fetch upstream main
+git rebase upstream/main
+```
 
 * Commits should be as small as possible, while ensuring that each commit is correct independently 
 
 * Commit your changes to your feature branch and push it to your fork.
 
-    ```shell
-    git add .
-    git commit -m "Something meaningful"
-    git push origin my_feature
-    ```
+```shell
+git add .
+git commit -m "Something meaningful"
+git push origin my_feature
+```
 
 !!! note
     Alternatively you can amend your commit before pushing if you forgot something by using `git commit --amend`
@@ -110,6 +110,5 @@ for a review in the pull request or a comment.
 
 We use GitHub issues to track bugs and enhancement requests. Please provide as much context as possible when you open an issue. The information you provide must be comprehensive enough to understand, reproduce the behavior and find related reports of that issue for the assignee. 
 Therefore, contributors may use but aren't restricted to the issue template provided by the IronCore maintainers.
-
 
 Thank you for helping improve our documentation!
