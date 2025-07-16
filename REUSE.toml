@@ -15,6 +15,7 @@ path = [
     "hack/**",
     "package-lock.json",
     "package.json",
+    "CNAME",
 ]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2025 SAP SE or an SAP affiliate company and IronCore contributors"
